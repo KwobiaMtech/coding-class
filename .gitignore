@@ -1,2 +1,4 @@
 learn-fastapi/venv
 venv/bin/activate
+__pycache__
+learn-fastapi/__pycache__
