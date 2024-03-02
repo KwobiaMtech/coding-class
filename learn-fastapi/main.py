@@ -1,7 +1,20 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from enum import Enum
 
 app = FastAPI()
+
+
+
+
+
+# ENUM EXAMPLE
+
+class Fruit(Enum): 
+    apple = "apple"
+    banana = "banana"
+    orange = "orange"
+
 
 
 class Item(BaseModel):
@@ -9,6 +22,7 @@ class Item(BaseModel):
     description: str | None = None
     price: float
     tax: float | None = None
+    fruit: Fruit 
 
 
 
